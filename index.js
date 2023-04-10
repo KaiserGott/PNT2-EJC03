@@ -27,3 +27,12 @@ console.log("-----------------------------------------------")
 const resultadoAcumuladoEdad = personajesSimpsons.reduce((acumulador, personajesSimpsons) => acumulador + personajesSimpsons.edad,0);
 
 console.log("El total de las edades acumuladas es " + resultadoAcumuladoEdad)
+
+console.log("----------------------------------------------")
+console.log("---------------TERCER EJERCICIO---------------")
+console.log("----------------------------------------------")
+
+const arrayNombre = personajesSimpsons.map(personajesSimpsons => {
+    return personajesSimpsons.nombre
+})
+console.log(arrayNombre)

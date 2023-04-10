@@ -19,3 +19,11 @@ console.log('Ahora paso a filtrar los menores de 18')
 const pernajesMenoresEdad = personajesSimpsons.filter(personajesSimpsons => personajesSimpsons.edad <18);
 
 console.log(pernajesMenoresEdad)
+
+console.log("-----------------------------------------------")
+console.log("---------------SEGUNDO EJERCICIO---------------")
+console.log("-----------------------------------------------")
+
+const resultadoAcumuladoEdad = personajesSimpsons.reduce((acumulador, personajesSimpsons) => acumulador + personajesSimpsons.edad,0);
+
+console.log("El total de las edades acumuladas es " + resultadoAcumuladoEdad)

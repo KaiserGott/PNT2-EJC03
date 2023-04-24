@@ -36,3 +36,25 @@ const arrayNombre = personajesSimpsons.map(personajesSimpsons => {
     return personajesSimpsons.nombre
 })
 console.log(arrayNombre)
+
+console.log("----------------------------------------------")
+console.log("---------------CUARTO EJERCICIO---------------")
+console.log("----------------------------------------------")
+
+const arrayEstudiantes = personajesSimpsons.map(personaje => {
+    const personajeEst = {
+        "nombre": personaje.nombre,
+        "edad": personaje.edad,
+        "rol": personaje.rol 
+    }
+    if (personaje.edad <= 18){
+        personaje.rol = "Estudiante"
+    } 
+    console.log(personajeEst)
+    return {
+        ...personajeEst};
+    })
+
+
+console.log("El array de los personajes menores a estudiantes es:")
+console.log(arrayEstudiantes)

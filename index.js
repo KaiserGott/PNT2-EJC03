@@ -50,11 +50,25 @@ const arrayEstudiantes = personajesSimpsons.map(personaje => {
     if (personaje.edad <= 18){
         personaje.rol = "Estudiante"
     } 
-    console.log(personajeEst)
-    return {
+        return {
         ...personajeEst};
     })
 
 
 console.log("El array de los personajes menores a estudiantes es:")
 console.log(arrayEstudiantes)
+
+
+console.log("----------------------------------------------")
+console.log("---------------QUINTO EJERCICIO---------------")
+console.log("----------------------------------------------")
+
+const arrayAAdicionar = [
+    { nombre: "Barney", edad: 40, rol: "Amigo de Homero" },
+    { nombre: "Seymour", edad: 67, rol: "Director de Escuela" },
+    { nombre: "Montgomery", edad: 104, rol: "Jefe de Planta Nuclear" },
+];
+
+const arrayCombinado = [...personajesSimpsons,...arrayAAdicionar];
+
+console.log(arrayCombinado)
